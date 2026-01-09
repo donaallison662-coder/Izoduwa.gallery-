@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IZODUWA — Coming Soon</title>
+  <meta name="description" content="IZODUWA — Visual works rooted in faith, silence, and identity. A quiet beginning."/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #f5f5f5;
+      background: #0a0a0a;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .background {
+      position: fixed;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1547891654-e66ed7eb9681?auto=format&fit=crop&q=80&w=2400') center/cover no-repeat;
+      filter: brightness(0.4) contrast(1.05) grayscale(0.3);
+      z-index: -2;
+    }
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(10,10,10,0.7) 0%, rgba(10,10,10,0.92) 70%, #0a0a0a 100%);
+      z-index: -1;
+    }
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      max-width: 920px;
+      margin: 0 auto;
+      position: relative;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(5rem, 12vw, 10rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 0.9;
+      margin-bottom: 0.5rem;
+      color: #ffffff;
+    }
+    .subtitle {
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      font-weight: 400;
+      opacity: 0.92;
+      margin-bottom: 2.5rem;
+      letter-spacing: 0.05em;
+    }
+    .artist-statement {
+      max-width: 680px;
+      font-size: 1.25rem;
+      line-height: 1.65;
+      font-weight: 300;
+      opacity: 0.88;
+      margin: 3rem auto 4rem;
+    }
+    .artist-statement p {
+      margin-bottom: 1.6rem;
+    }
+    .coming-soon {
+      font-size: 1.3rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      opacity: 0.65;
+      margin-bottom: 3.5rem;
+    }
+    .email-section {
+      max-width: 480px;
+      margin: 0 auto 3rem;
+    }
+    .email-section p {
+      font-size: 1.15rem;
+      opacity: 0.85;
+      margin-bottom: 1.6rem;
+    }
+    input[type="email"] {
+      width: 100%;
+      padding: 1.1rem 1.6rem;
+      font-size: 1.1rem;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.18);
+      color: white;
+      outline: none;
+      transition: all 0.3s;
+    }
+    input[type="email"]:focus {
+      border-color: rgba(255,255,255,0.45);
+      background: rgba(255,255,255,0.12);
+    }
+    button {
+      margin-top: 1.2rem;
+      padding: 1rem 2.8rem;
+      font-size: 1.05rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      background: #ffffff;
+      color: #0a0a0a;
+      border: none;
+      cursor: pointer;
+      transition: all 0.35s;
+    }
+    button:hover {
+      background: rgba(255,255,255,0.92);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    }
+    footer {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.95rem;
+      opacity: 0.55;
+    }
+    @media (max-width: 640px) {
+      h1 { font-size: 5.8rem; }
+      .subtitle { font-size: 1.6rem; }
+      .artist-statement { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="overlay"></div>
+  
+  <div class="container">
+    <h1>IZODUWA</h1>
+    <p class="subtitle">A Quiet Beginning</p>
+    
+    <div class="artist-statement">
+      <p>I create visual works rooted in faith, silence, and identity.</p>
+      <p>This space is the beginning — a quiet place to see, reflect, and believe.</p>
+    </div>
+    
+    <p class="coming-soon">Launching 2026</p>
+    
+    <div class="email-section">
+      <p>Be among the first to experience the collection — join the private preview list</p>
+      <form action="https://formspree.io/f/your-form-id" method="POST"> <!-- Replace with your real form handler -->
+        <input type="email" name="email" placeholder="Your email address" required autocomplete="email">
+        <button type="submit">Notify Me</button>
+      </form>
+    </div>
+  </div>
+  
+  <footer>© 2026 IZODUWA — All works original and protected</footer>
+</body>
+</html>
